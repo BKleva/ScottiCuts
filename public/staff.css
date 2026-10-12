@@ -13,7 +13,7 @@
 .shot img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:var(--ink)}
 .shot .cap{display:flex;gap:6px;padding:8px}
 .shot input{flex:1;min-width:0;padding:8px 9px;background:var(--ink);border:1px solid var(--line);color:var(--bone);font:inherit;font-size:.88rem}
-.shot input:focus{outline:none;border-color:var(--red2)}
+.shot input:focus{outline:none;border-color:var(--accent2)}
 .shot .x{width:36px;height:auto}
 .shot.busy{opacity:.55;pointer-events:none}
 .pw{display:grid;gap:14px;max-width:420px}
