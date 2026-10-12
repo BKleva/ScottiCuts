@@ -16,3 +16,4 @@ Create a `.env` (gitignored) with `ADMIN_USER`, `ADMIN_PASS`, `ADMIN_SECRET`.
 ## Production env (Netlify)
 `ADMIN_USER`, `ADMIN_PASS`, `ADMIN_SECRET`, `AWS_LAMBDA_JS_RUNTIME=nodejs22.x`.
 Optional email: `RESEND_API_KEY`, `RESEND_FROM`, `NOTIFY_EMAIL` (defaults to ben@shoreworksnj.com).
+
