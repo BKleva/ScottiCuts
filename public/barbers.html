@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Barbers | ScottiCuts Barbershop, Somers Point NJ</title>
+<meta name="description" content="Meet the barbers at ScottiCuts in Somers Point, NJ — see their work and book your chair online.">
+<meta name="theme-color" content="#0c0c0c">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<meta property="og:title" content="Meet the Barbers — ScottiCuts, Somers Point NJ">
+<meta property="og:description" content="See the barbers and their work. Book online or walk in.">
+<meta property="og:image" content="/images/shop-interior.jpg">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="/" aria-label="ScottiCuts home">
+    <img src="/images/pole-light.png" alt="" width="20" height="80">
+    <span>Scotti<em>Cuts</em></span>
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="/#services">Services</a>
+    <a href="/barbers" aria-current="page" style="color:#fff">Barbers</a>
+    <a href="/#visit">Hours &amp; Visit</a>
+    <a class="btn btn-sm" href="/#book">Book Now</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="kicker">The crew</p>
+    <h1>Meet the Barbers</h1>
+    <p>The hands behind the chair. Browse their work, then book the cut you want.</p>
+    <nav class="crew-nav" id="crewNav" aria-label="Jump to a barber" hidden></nav>
+  </div>
+</section>
+<div class="stripe" aria-hidden="true"></div>
+
+<main class="section">
+  <div class="wrap">
+    <div class="team" id="teamGrid" aria-live="polite"><p class="sub" style="color:var(--mute)">Loading…</p></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <img src="/images/pole-light.png" alt="" width="14" height="56">
+  <p>© <span id="yr">2026</span> ScottiCuts Barbershop · 426 Shore Rd Unit E, Somers Point, NJ · <a href="tel:+16093652539" style="color:var(--bone)">(609) 365-2539</a></p>
+  <p class="credit"><a class="footer-credit" href="https://shoreworksnj.com" target="_blank" rel="noopener">Site by <img src="/images/shoreworks-logo-light.png" width="1327" height="215" alt="Shoreworks" loading="lazy"></a><span class="logins"><a class="staff" href="/">Home</a><a class="staff" href="/staff">Barber login</a></span></p>
+</footer>
+
+<dialog id="lightbox" aria-label="Portfolio photo"><button class="lb-x" type="button" aria-label="Close">✕</button><button class="lb-nav prev" type="button" aria-label="Previous">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lb-nav next" type="button" aria-label="Next">›</button></dialog>
+<a class="sticky-book" href="/#book">Book Now</a>
+
+<script src="/barbers.js"></script>
+</body>
+</html>

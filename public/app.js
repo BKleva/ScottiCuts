@@ -308,9 +308,9 @@
       return el('article', { class: 'barber' }, photo, el('div', {},
         el('h3', { class: 'b-name' }, b.name), b.title ? el('p', { class: 'b-title' }, b.title) : null,
         b.bio ? el('p', { class: 'b-bio' }, b.bio) : null, work,
-        el('a', { class: 'btn btn-sm', href: '#book' }, `Book a cut`)));
+        el('div', { class: 'b-cta' }, el('a', { class: 'btn btn-sm', href: '#book' }, 'Book a cut'), el('a', { class: 'btn btn-ghost btn-sm', href: `barbers#${b.id}` }, b.images.length ? `Full portfolio (${b.images.length})` : 'Full profile'))));
     }));
-    $('#team').hidden = false; $('#navTeam').hidden = false;
+    $('#team').hidden = false;
   }
 
   /* ---------- boot ---------- */
