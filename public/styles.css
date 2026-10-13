@@ -33,6 +33,17 @@ h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.02em;line-he
 .nav-links{display:flex;align-items:center;gap:26px}
 .nav-links a:not(.btn){text-decoration:none;font-weight:600;font-size:.88rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bone2)}
 .nav-links a:not(.btn):hover{color:#fff}
+.nav-call,.nav-toggle{display:none}
+.nav-toggle{width:46px;height:46px;padding:0;background:transparent;border:1px solid var(--line);color:var(--bone);cursor:pointer;place-items:center}
+.nav-toggle:hover{border-color:var(--bone)}
+.nav-toggle .bars,.nav-toggle .bars::before,.nav-toggle .bars::after{display:block;width:22px;height:2px;background:currentColor;transition:transform .2s,background .2s}
+.nav-toggle .bars{position:relative}
+.nav-toggle .bars::before,.nav-toggle .bars::after{content:"";position:absolute;left:0}
+.nav-toggle .bars::before{top:-7px}
+.nav-toggle .bars::after{top:7px}
+.nav.open .nav-toggle .bars{background:transparent}
+.nav.open .nav-toggle .bars::before{transform:translateY(7px) rotate(45deg)}
+.nav.open .nav-toggle .bars::after{transform:translateY(-7px) rotate(-45deg)}
 
 /* hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:110px 22px 70px;background:
@@ -236,7 +247,12 @@ address a{color:var(--accent2);font-weight:600;text-decoration:none}
   .hero-copy{width:100%}
 }
 @media (max-width:860px){
-  .nav-links a:not(.btn){display:none}
+  .nav-toggle{display:inline-grid}
+  .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:0 22px;background:#0c0c0c;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(0,0,0,.55);max-height:0;overflow:hidden;visibility:hidden;opacity:0;transition:max-height .28s ease,opacity .2s ease,visibility 0s .28s}
+  .nav.open .nav-links{max-height:calc(100vh - 70px);padding:4px 22px 22px;visibility:visible;opacity:1;overflow-y:auto;transition:max-height .28s ease,opacity .2s ease}
+  .nav-links a:not(.btn){display:block;padding:17px 2px;border-bottom:1px solid var(--line);font-size:1rem}
+  .nav-links .btn{margin-top:18px;padding:17px;font-size:.95rem}
+  .nav-call{display:block;margin-top:14px;padding:12px 0 0;text-align:center;font-weight:600;letter-spacing:.1em;color:var(--bone2);text-decoration:none}
   
   .section{padding:68px 0}
   .menu{grid-template-columns:1fr}

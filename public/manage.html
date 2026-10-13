@@ -24,9 +24,18 @@
 <body>
 <header class="nav">
   <a class="brand" href="/"><img class="brand-logo" src="images/logo-sm.png" alt="ScottiCuts" width="360" height="234"></a>
-  <nav class="nav-links"><a class="btn btn-sm" href="/#book">Book</a></nav>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span class="bars" aria-hidden="true"></span></button>
+  <nav class="nav-links" id="navLinks" aria-label="Main">
+    <a href="/#services">Services</a>
+    <a href="/barbers">Barbers</a>
+    <a href="/#shop">The Shop</a>
+    <a href="/#visit">Hours &amp; Visit</a>
+    <a class="btn btn-sm" href="/#book">Book Now</a>
+    <a class="nav-call" href="tel:+16093652539">Call (609) 365-2539</a>
+  </nav>
 </header>
 <main><div class="card" id="card"><p>Loading your appointment…</p></div></main>
+<script src="/nav.js"></script>
 <script>
 (() => {
   const card = document.getElementById('card');
